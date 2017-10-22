@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<style type="text/css">
+	
+	</style>
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="pageone">
+		<h1 align="center">欢迎注册</h1>
+        <div data-role="content">
+
+	        <div data-role="fieldcontain">
+	        	<p id="error"></p>
+	            <input type="text" name="text" id="username" placeholder="昵称"  />
+	            <input type="password" name="text" id="password" placeholder="密码"  />
+	            <!-- <input type="password" name="text" id="text1" placeholder="确认密码"  /> -->
+	        </div>
+	        <a href="#pagetwo" data-role="button" data-iconpos="notext" id="register" style="background-color:orange; color:white;">立即注册</a>
+	    </div>
+    </div>
+    <div data-role="page" id="pagetwo">
+		<img src="images/baixian.jpg" style="border-radius:50%;">
+        <div data-role="content">
+
+	        <div data-role="fieldcontain">
+	            账户：<input type="text" name="text" id="username1" placeholder="用户名"  />
+	            密码：<input type="text" name="text" id="password1" placeholder="密码"  />
+	        </div>
+	        <a href="#pagethree" data-role="button" data-iconpos="notext" id="signin" style="background-color:orange; color:white;">登录</a>
+	    </div>
+    </div>
+    <div data-role="page" id="pagethree">
+		<header data-role="header">
+			<a href="#anylink" data-role="button" data-icon="user" data-iconpos="notext"   ></a>
+	        <h1>消息</h1>
+	        <a href="#anylink" data-role="button" data-icon="plus" data-iconpos="notext" data-iconpos="right"></a>
+        </header>
+		    <input type="search" name="search" id="search" value="" />
+        <div data-role="content">
+            	
+		    <ul data-role="listview" class="ullist">
+			  <li>			  	
+			  	<img src="images/baixian.jpg" class="images" />
+			  	<h5>Index</h5>
+			  	<p>hellohello</p>
+			  	<span class="ui-li-count">2017-10-20</span>			  	
+			  </li>
+			  <li>
+			  	<img src="images/baixian.jpg" class="images"/>
+			  	<h5>Sent</h5>
+			  	<p>shvksdvhdkuvsiu</p>
+			  	<span class="ui-li-count">2017-10-20</span>
+			  </li>
+			  <li>
+				  <img src="images/baixian.jpg" class="images"/>
+				  <h5>Trash</h5>
+				  <p>hsfjuesghbdvbs</p> 
+				  <span class="ui-li-count">2017-10-20</span>
+			  </li>
+			  <li>
+			  	<img src="images/baixian.jpg" class="images"/>
+			  	<h5>Index</h5>
+			  	<p>hellohello</p>
+			  	<span class="ui-li-count">2017-10-20</span>
+			  </li>
+			  <li>
+			  	<img src="images/baixian.jpg" class="images"/>
+			  	<h5>Sent</h5>
+			  	<p>shvksdvhdkuvsiu</p>
+			  	<span class="ui-li-count">2017-10-20</span>
+			  </li>
+			  <li>
+				  <img src="images/baixian.jpg" class="images"/>
+				  <h5>Trash</h5>
+				  <p>hsfjuesghbdvbs</p>
+				  <span class="ui-li-count">2017-10-20</span>
+			  </li>
+			  <li>
+			  	<img src="images/baixian.jpg" class="images"/>
+			  	<h5>Index</h5>
+			  	<p>hellohello</p>
+			  	<span class="ui-li-count">2017-10-20</span>
+			  </li>
+			  <li>
+			  	<img src="images/baixian.jpg" class="images"/>
+			  	<h5>Sent</h5>
+			  	<p>shvksdvhdkuvsiu</p>
+			  	<span class="ui-li-count">2017-10-20</span>
+			  </li>
+			  <li>
+				  <img src="images/baixian.jpg" class="images"/>
+				  <h5>Trash</h5>
+				  <p>hsfjuesghbdvbs</p>
+				  <span class="ui-li-count">2017-10-20</span>
+			  </li>
+			</ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+			    	<li class="li"><a href="#" data-role="button" data-icon="comment" data-iconpos="notext"><p>消息</p></a></li>
+			    	
+			    	<li class="li"><a href="#" data-role="button" data-icon="user" data-iconpos="notext"><p>联系人</p></a></li>
+			    	
+					<li class="li"><a href="#" data-role="button" data-icon="star" data-iconpos="notext"><p>动态</p></a></li>
+					
+				</ul>
+			</div>
+		</div>
+    </div> 
+		<script type="text/javascript">
+		var username = document.getElementById('username');
+		var pwd = document.getElementById('password');
+		var register = document.getElementById('register');
+		var signinin = document.getElementById('signin');	
+		var err = document.getElementById('error');
+//		console.log(err.innerHTML);
+		
+		$('#register').click(function(){
+			if(username.value == ''){
+				err.innerHTML = '帐号不能为空！';
+			}else if(pwd.value == ''){
+				err.innerHTML = '密码不能为空！';
+			}else{
+				$.ajax({
+					type:"get",
+					url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+					data:{status:'login',userID:username.value,password:pwd.value},
+					success:function(data){
+						console.log(data);
+						if(data == 0){
+	//						console.log(err.innerHTML);
+							err.innerHTML = '用户名不存在！';
+						}
+						else if(data == 2){
+							err.innerHTML = '用户名与密码不符！';
+						}
+						else{
+							$('#signin').click();
+	//						location.href = 'http://www.baidu.com'
+						}
+					},
+					error:function(err){
+						console.log(err.message);
+					}
+				})
+			}	
+		})
+		
+			
+			
+		
+		
+//		pagethree three three three three three three three three three
+		var textname = document.getElementById('username1');
+		var paswd = document.getElementById('password1');
+		//var tel = document.getElementById('tel');
+		//var telerr = document.getElementById('telerr');
+		
+		$('#sub-btnup').click(function(){
+			if(textname.value == ''){
+				telerr.innerHTML = '昵称不能为空！';
+			}else if(paswd.value == ''){
+				telerr.innerHTML = '密码不能为空！';
+			 //}else if(tel.value == ''){
+			// 	telerr.innerHTML = '手机号不能为空！';
+			}else{
+				$.ajax({
+					type:"get",
+					url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+					data:{status:'register',userID:username1.value,password:password1.value},
+					success:function(data){
+						console.log(data);
+						if(data == 0){
+	//						console.log(err.innerHTML);
+							telerr.innerHTML = '手机号已注册！';
+	//						btnin.href='';
+						}
+						else if(data == 2){
+							telerr.innerHTML = '数据库报错！';
+	//						btnin.href='';
+						}
+						else if(data == 1){
+							$('#btn-up').click();
+						}
+					},
+					error:function(err){
+						console.log(err.message);
+	//					document.write(err.message);
+					}
+				})
+			}
+		})
+		</script>
+</body>
+</html>
