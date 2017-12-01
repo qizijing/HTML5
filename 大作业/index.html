@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    pagination: '.swiper-pagination',
+		    nextButton: '.swiper-button-next',
+		    prevButton: '.swiper-button-prev',
+		    
+		  });                           
+        });
+    </script>
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<img src="img/scan.png" id="scan"/>
+			<p class="img-p">扫一扫</p>
+			<input type="text" name="search" id="search" value="女士棉服"/>
+			<img src="img/t-d-code.png" id="t-d-code"/>
+			<p class="img-p1">会员码</p>
+		</header>
+		<div class="content">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+				    <div class="swiper-slide"><img src="img/877031.jpg" /></div>
+				    <div class="swiper-slide"><img src="img/512756.jpg" /></div>
+				    <div class="swiper-slide"><img src="img/516525.jpg" /></div>
+				    <div class="swiper-slide"><img src="img/512756.jpg" /></div>
+				    <div class="swiper-slide"><img src="img/516525.jpg" /></div>
+	  			</div>
+	  			<div class="swiper-pagination"></div>	
+
+		      	<div class="swiper-button-prev"></div>	
+		      	<div class="swiper-button-next"></div>
+			</div>
+			<div class="button-img">
+				<ul>
+					<li><img src="img/tianmao.png"/><p class="li-img-p">天猫</p></li>
+					<li><img src="img/juhuasuan.png"/><p class="li-img-p1">聚划算</p></li>
+					<li><img src="img/tinamaoguoji.png"/><p class="li-img-p2">天猫国际</p></li>
+					<li><img src="img/take-out-food.png"/><p class="li-img-p">外卖</p></li>
+					<li><img src="img/tianmao-market.png"/><p class="li-img-p2">天猫超市</p></li>
+					
+				</ul>
+				<ul>
+					<li><img src="img/recharge.png"/><p class="li-img-p">充值</p></li>
+					<li><img src="img/feizhu-trip.png"/><p class="li-img-p2">飞猪旅行</p></li>
+					<li><img src="img/taojinbi.png"/><p class="li-img-p1">淘金币</p></li>
+					<li><img src="img/paimai.png"/><p class="li-img-p">拍卖</p></li>
+					<li><img src="img/classify.png"/><p class="li-img-p">分类</p></li>
+				</ul>				
+			</div>
+		</div>
+		<footer class="footer">
+			<!--<ul>
+				<li class="footer-li1"><img src="img/home-page.png" alt="" /><p class="li-img-p3"></p></li>
+				<li class="footer-li"><img src="img/weitao.png" alt="" /><p class="li-img-p3">微淘</p></li>
+				<li class="footer-li"><img src="img/info.png" alt="" /><p class="li-img-p3">信息</p></li>
+				<li class="footer-li"><img src="img/shopping-cart.png" alt="" /><p class="li-img-p3">购物车</p></li>
+				<li class="footer-li"><img src="img/me-page.png" alt="" /><p class="li-img-p3">我的</p></li>
+			</ul>-->
+			<a href="#">
+				<span><img src="img/home-page.png" alt="" /></span>
+				<span class="span-w"></span>
+			</a>
+			<a href="#">
+				<span><img src="img/weitao.png" alt="" /></span>
+				<span class="span-w">微淘</span>
+			</a>
+			<a href="#">
+				<span><img src="img/info.png" alt="" /></span>
+				<span class="span-w">信息</span>
+			</a>
+			<a href="#">
+				<span><img src="img/shopping-cart.png" alt="" /></span>
+				<span class="span-w">购物车</span>
+			</a>
+			<a href="#">
+				<span><img src="img/me-page.png"/></span>
+				<span class="span-w">我的</span>
+			</a>
+		</footer>
+	</div>
+	
+</body>
+</html>
