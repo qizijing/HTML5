@@ -21,12 +21,12 @@
 			margin-top: 80px;
 		}
 	</style>
-    <script src="js/jQuery2.1.js"></script>
+    <script src="js/jquery-2.2.2.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
 	<div data-role="page" id="pageone" class="ui-page-theme-d">
-		<img src="img/827682.jpg" style="border-radius:50%;">
+		<img src="img/877031.jpg" style="border-radius:50%;">
         <div data-role="content">
 
 	        <div data-role="fieldcontain">
@@ -34,14 +34,70 @@
 	            密码：<input type="password" name="text" id="password" placeholder="密码"  />
 	        </div>
 	        <a href="#" data-role="button" data-iconpos="notext" id="signin" style="background-color:antiquewhite; color:cadetblue;">登录</a>
-	        <p>没有账号</p>
-	        立即<a href="#" id="btn1">注册</a>
 	    </div>
     </div>
     
 </body>
-<script src="js/login.js">
-				
+<script type="text/javascript">
+//		var username = document.getElementById('username');
+//		var pwd = document.getElementById('password');
+//		var register = document.getElementById('register');
+//		var signin = document.getElementById('signin');	
+//		var err = document.getElementById('error');
+////		console.log(err.innerHTML);
+//		var username1=localStorage.getItem('username');
+//		console.log(username1);
+		$('#signin').click(function(){
+//			if(username.value == ''){
+//				err.innerHTML = '帐号不能为空！';
+//			}else if(pwd.value == ''){
+//				err.innerHTML = '密码不能为空！';
+//			}else{
+//				$.ajax({
+//					type:"get",
+//					datatype:"jsonp",
+//					url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+//					data:{status:'login',userID:username.value,password:pwd.value},
+//					success:function(data){
+//						//console.log(data);
+//						if(data == 0){
+//	//						console.log(err.innerHTML);
+//							err.innerHTML = '用户名不存在！';
+//						}
+//						else if(data == 2){
+//							err.innerHTML = '用户名与密码不符！';
+//						}
+//						else{
+//							$('#signin').click(function(){ $(location).prop('href','index.html');});
+//	//						
+//						}
+//					},
+//					error:function(err){
+//						console.log(err.message);
+//					}
+//				})
+				$.ajax({
+			      url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+			      data:{status:"login",userID:$(".name").val(),password:$('.password').val()},
+			      success:function(data){
+			        if(data == 0){
+			          $("#username").val('');
+			           $('#password').val('');
+			          $("#username").attr('placeholder','用户名不存在');
+			        }
+			        else if(data==2){
+			            $('.password').val('');
+			            $(".password").attr('placeholder','用户密码不符');
+			        }
+			        else{
+			            localStorage.setItem('username',$("#username").val());
+			            console.log(localStorage.getItem('username'));
+			           window.location.href='index.html';
+			        }
+			      }
+			    });
+	
+		})
 </script>
 </html>
 

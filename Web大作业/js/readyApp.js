@@ -19,5 +19,5 @@ $(document).ready(function () {
 			    },6000);
 	       });
 $(document).ready(function(){
-		$('#btn').click(function(){ window.location.href="login.html";});
+		$('#btn').click(function(){ window.location.href="register.html";});
 	})

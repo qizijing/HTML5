@@ -1,7 +1,7 @@
-
-if(!localStorage.getItem('name')){
+    if(!localStorage.getItem('name')){
 	location.href="readyApp.html"
 }
+    var username=localStorage.getItem('username');
 	var classID=location.hash.slice(7);	
 	$.ajax({
 		type:"get",
@@ -24,9 +24,10 @@ if(!localStorage.getItem('name')){
 						//window.location.href="goodslist.html";
 						$(location).prop('href', 'goodslist.html#'+class1);
 					})					
-				})(i)
-//				var imgGoods=$("#goods");
-				
+				})(i)				
 			}										
 		}
 	})
+$("#search").click(function(){
+    $(location).prop('href','search.html');
+})	

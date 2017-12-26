@@ -116,8 +116,13 @@ html,body{
     padding:0.2rem;
     padding-top:0.1rem;
     position:relative;
-
+    
    }
+   /*.jiage{
+    font-size: 50px;
+    float: right;
+    padding-top: 30px;
+   }*/
    .footer{
     width:7.5rem;
     height:2.5rem;

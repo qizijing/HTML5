@@ -67,17 +67,17 @@
           width:7.8rem;
           height:1.4rem;
           position: fixed;
-          bottom:0rem;
+          bottom: 0rem;
     }
     .footer span{
     	text-align: center;
-    	line-height: 1.4rem;
+    	line-height: 1.5rem;
     	font-size:0.3rem;
     	position: relative;
     	display: inline-block;
     }
     .footer-li1{
-    	height: 1.4rem;
+    	height: 1.5rem;
     	
     	padding-left: 0;
     	position: absolute;
@@ -88,14 +88,20 @@
     	top: 0.2rem;
     }
     .footer-li2{
+    	display: inline-block;
+        font-size: 15px;
         color: white;
         background-color:orange;
-        width: 2rem;
-        height:1.4rem;
+        font-weight: normal;
+        width: 2.1rem;
+        height:1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
         border-radius: 2px;
         font-family: 宋体;
         position: absolute;
-        top: -0.26rem;
+        top: -0.2rem;
+        margin-top:0rem;
     }
     .price{
         color:#FE1200;
@@ -104,11 +110,12 @@
         display: inline-block;
     }
     .shopping{
+        font-size: 15px;
         color: white;
         background-color:#FE1200;
         font-weight: normal;
-        width: 2rem;
-        height:1.4rem;
+        width: 2.1rem;
+        height:1.5rem;
         border-radius: 2px;
         font-family: 宋体;
         top: -1.9rem;

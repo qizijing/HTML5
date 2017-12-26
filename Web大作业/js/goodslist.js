@@ -1,4 +1,4 @@
-var username=localStorage.getItem(username);
+
   
 
     var mySwiper = new Swiper('.swiper-container',{

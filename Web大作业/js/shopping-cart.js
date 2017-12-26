@@ -25,7 +25,7 @@ var username=localStorage.getItem('username');
           <img src="`+data[i].goodsListImg+`" alt="" class="goodsImg">
 
           <div class="img-title">
-            <span class="goodsName">`+data[i].goodsName.slice(0,18)+`...`+`</span>
+            <span class="goodsName">`+data[i].goodsName.slice(0,10)+`...`+`</span>
             <span class='price'>¥`+data[i].price+`</span>
           </div>
 
@@ -62,15 +62,15 @@ var username=localStorage.getItem('username');
           $(".every:last").css('border-bottom','9px dotted rgb(230,226,220)');
 //        $(".price1").html('¥ '+sum);
           $(".price1").css('margin-bottom','400px');
-		 $(".radio1").click(function(){
-		      //判断当前点击的复选框处于什么状态$(this).is(":checked") 返回的是布尔类型
-		      if($(this).is(":checked")){
+          //$(".footer1").html('总金额  ¥ '+sum);
+          $(".radio1").click(function(){
+		    if($(this).is(":checked")){
 		          $(".checkbox1").prop("checked",true);
 		          $(".footer1").html('总金额  ¥ '+sum);
 		      }
 		      else{
 		          $(".checkbox1").prop("checked",false);
-		          $(".footer1").html('总金额  ¥ 0');
+		          $(".footer1").html('总金额  ¥ '+0);
 		      }
 		 });
         }
@@ -186,6 +186,8 @@ var checkAll = $('.radio1');
 
   }//success 函数 结束
 });//ajax结束
+
+
 
 
 
