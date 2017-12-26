@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<style type="text/css">
+		.ui-page-theme-d{
+			color: white;
+			background: linear-gradient(to bottom right,pink,#fe1200);
+		}
+		img{
+			position:relative;
+			top: 80px;
+			left:100px;
+			height:200px;
+			width:200px;
+		}
+		.ui-content{
+			margin-top: 80px;
+		}
+	</style>
+    <script src="js/jQuery2.1.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="pageone" class="ui-page-theme-d">
+		<img src="img/827682.jpg" style="border-radius:50%;">
+        <div data-role="content">
+
+	        <div data-role="fieldcontain">
+	            账户：<input type="text" name="text" id="username" placeholder="用户名"  /><p id="error"></p>
+	            密码：<input type="password" name="text" id="password" placeholder="密码"  />
+	        </div>
+	        <a href="#" data-role="button" data-iconpos="notext" id="signin" style="background-color:antiquewhite; color:cadetblue;">登录</a>
+	        <p>没有账号</p>
+	        立即<a href="#" id="btn1">注册</a>
+	    </div>
+    </div>
+    
+</body>
+<script src="js/login.js">
+				
+</script>
+</html>
+
+
+

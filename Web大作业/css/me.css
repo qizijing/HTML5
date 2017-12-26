@@ -1,0 +1,158 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	font-size: 0.3rem;
+	color:#808080;
+}
+body{
+	height:15rem,;
+}
+.header{
+	width:7.5rem;
+	height:3.5rem;
+	background-color: #FE1200;
+
+}
+.header p{
+	color: white;	
+}
+#btn{
+	padding-top: 0.3rem;
+	font-size: 0.38rem;
+}
+.content-header{
+	width:7.5rem;
+	margin-top: 0.3rem;
+}
+.img1{
+	height:2rem;
+	width:2rem;	
+	border-radius: 50%;
+	margin-left: 0.3rem;
+}
+.img2{
+	position: relative;
+	top: -0.76rem;
+	left: 2.48rem;
+}
+.img-p{
+	width: 2rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 1.7rem;
+    font-size: 0.38rem;
+}
+.p-box{
+
+}
+.content-ul1{
+	padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-bottom: #dddcdc solid 0.2rem;
+    border-top: #dddcdc solid 0.2rem;
+}
+.content-ul1 ul li{
+	width: 1.5rem;
+	font-size: 0.35rem;
+	color:#808080;
+	padding-left: 0.8rem;
+	display: inline-block;
+}
+.content-menu ul li{
+	display: inline-block;
+}
+.menu-p{
+	margin: 0.4rem 0 0.4rem 0.3rem;
+}
+.menu-li1 img{
+	padding-left: 0.25rem;
+	width:0.5rem;
+	height:0.5rem;
+}
+.menu-li2 img{
+	padding-left: 0.4rem;
+	width:0.5rem;
+	height:0.5rem;
+}
+.menu-li1{
+	width: 1.1rem;
+	margin-left: 0.2rem;
+}
+.menu-li2{
+	width: 1.5rem;
+	margin-left: 0.2rem;
+}
+.new-trans{
+	height: 3rem;
+}
+.trans-span1{
+	margin-top: 0.3rem;
+	height: 3rem;
+	width: 2rem;
+}
+.s-span{
+	text-align:center;
+	
+	height:1.5rem;
+	border-right: 0.01rem solid gainsboro;
+}
+.s-span span{
+	line-height: 0.5rem;
+	display: block;
+}
+.trans-span2s{
+	height:3rem;
+	width: 5rem;
+	position:relative;
+	top: -3rem;
+	left: 2.2rem;
+}
+.trans-span2s img{
+	display: block;
+	padding-bottom: 0.3rem;
+}
+.s-p{
+	width: 2rem;
+	position: relative;
+	top:-1rem;
+	left: 1.3rem;
+}
+.me-pay p{
+	margin: 0.4rem 0 0.4rem 0.3rem;
+}
+.me-pay ul li{
+	display: inline-block;
+	padding-left: 0.6rem;
+}
+.footer{
+	width:7.5rem;
+    height: 1.4rem;
+    background-color: white;
+    position: fixed;
+    bottom:0rem;
+	
+}
+
+.footer-a0{
+	padding-left:0.3rem ;
+}
+.footer-a0 img{
+	width:1.1rem;
+	height: 1rem;
+}
+.footer-a{
+	/*height: 1.4rem;*/
+	padding-left:0.6rem ;
+	margin-top: 0.3rem;
+}
+.footer-a img{
+	margin-bottom: 0.4rem;
+}
+.span-w{
+	height: 0.3rem;
+	width: 0.4rem;
+	margin-left: -0.75rem;
+	color:#fe1200;
+}

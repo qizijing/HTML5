@@ -1,0 +1,120 @@
+    *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        ul,li{
+            list-style: none;
+        }
+ 	body{
+ 		height: 15em;
+ 	}
+      .swiper-container {
+      width:100%;
+      height:6rem;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      width:100%;
+      height:6rem;
+      font-size:18px;
+      background: #fff;
+
+    }
+     .swiper-slide img{
+      width:100%;
+      height:6rem;
+     }
+     #goods{
+      width:7.5rem;
+     }
+     #goods img{
+     	/*display: block;*/
+     	width: 7.5rem;
+     }
+     .title  {
+        padding:0.1rem;
+        font-size:0.33rem;
+     }
+     .list{
+        font-size: 20px;
+     }
+    
+     .list{
+      background-color: white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+     }
+     .content{
+      margin-top: 20px;
+      width: 100%;
+      height: 160px;
+      background-color: white;
+     }
+     .xiaoshou{
+      display: inline-block;
+      position: relative;
+      left: 3rem;
+      top: -0.3rem;
+      font-size: 16px;
+     }
+    .list li{
+      padding-left: 10px;
+    }
+    .footer{
+    	background-color: #fff;
+          width:7.8rem;
+          height:1.4rem;
+          position: fixed;
+          bottom:0rem;
+    }
+    .footer span{
+    	text-align: center;
+    	line-height: 1.4rem;
+    	font-size:0.3rem;
+    	position: relative;
+    	display: inline-block;
+    }
+    .footer-li1{
+    	height: 1.4rem;
+    	
+    	padding-left: 0;
+    	position: absolute;
+        top: -0.2rem;
+    }
+    .footer-li1 img{
+    	position: relative;
+    	top: 0.2rem;
+    }
+    .footer-li2{
+        color: white;
+        background-color:orange;
+        width: 2rem;
+        height:1.4rem;
+        border-radius: 2px;
+        font-family: 宋体;
+        position: absolute;
+        top: -0.26rem;
+    }
+    .price{
+        color:#FE1200;
+        font-size: 30px;
+        margin-left: 10px;
+        display: inline-block;
+    }
+    .shopping{
+        color: white;
+        background-color:#FE1200;
+        font-weight: normal;
+        width: 2rem;
+        height:1.4rem;
+        border-radius: 2px;
+        font-family: 宋体;
+        top: -1.9rem;
+    	left: 5.5rem;
+    }
+    #gou{
+        width: 100%;
+        height: 46px;
+    }
